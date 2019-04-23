@@ -90,6 +90,7 @@ def support_vector_regression():
     x_train, x_test,y_train,y_test = train_test(after_bw_dataset)
    
     X_train,X_test = scale_dataset(x_train,x_test)
+    Y_train,Y_test = scale_dataset(y_train,y_test)
     
     #support vector regression
     svr = SVR(kernel = 'rbf',gamma = 'scale') # rbf = radial bases function
@@ -98,7 +99,7 @@ def support_vector_regression():
     y_pred = svr.predict(X_test)
     
     
-    return y_pred,y_test
+    return y_pred,Y_test
 
 
 
