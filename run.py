@@ -9,7 +9,8 @@ from optimizing_best_algorithm import support_vector_classifier
 from optimizing_best_algorithm import k_fold_cross_validation
 from support_vector_regression import support_vector_regression
 
-#cost is --> (0*TruePositive + 0*TrueNegative + 5*FalsePositive + 1*FalseNegative)/1000 
+#cost is --> (0*TruePositive + 0*TrueNegative + 5*FalsePositive + 1*FalseNegative)/200
+#200 is my sample size
 #accuracy is --> (TruePositive + TrueNegative) / (TruePositive+TrueNegative+FalsePositive+FalseNegative)
 def run():
     #loading dataset with preprocess operations from my library
