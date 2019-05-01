@@ -93,7 +93,7 @@ def scale_dataset(x_train,x_test):
     
   
 #finding cost of confusion matrix and accuracy,in this specific dataset:
-#cost is --> (0*TruePositive + 0*TrueNegative + 5*FalsePositive + 1*FalseNegative)/200 
+#cost is --> (0*TruePositive + 0*TrueNegative + 5*FalseNegative + 1*FalsePositive)/200 
 def cost_accuracy(cm):
     
     accuracy = (cm[0][0]+cm[1][1]) / (cm[0][0]+cm[0][1]+cm[1][0]+cm[1][1])
