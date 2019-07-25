@@ -20,3 +20,4 @@ success_k_fold : After the applied k fold cross validation, summing all parts an
 
 y_pred_reg	: Predict value based on Support Vector Machine,
 y_test_reg : The real values against y_pred_reg
+"""
